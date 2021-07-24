@@ -1,0 +1,11 @@
+
+    <h5>Buscar:</h5>
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Buscar gifts..."
+        (keyup.enter)="buscar()"
+        #txtBuscar 
+      >
+      <!-- el ViewCHild busca al elemento local con la referencia #txtBuscar y le asigna el valor al elemento creado con el viewChild
+      osea que manda la info de aqui a busqueda.component.ts una vez encontrada la referencia local -->
